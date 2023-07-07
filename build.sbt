@@ -4,5 +4,6 @@ ThisBuild / scalaVersion := "3.3.0"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "wator"
+    name := "wator",
+      libraryDependencies += "org.scalafx" %% "scalafx" % "20.0.0-R31"
   )
