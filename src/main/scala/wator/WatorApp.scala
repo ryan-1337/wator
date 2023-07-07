@@ -22,9 +22,6 @@ class WatorApp extends JFXApp3 {
   val tunas = new ArrayBuffer[Tuna]()
   val sharks = new ArrayBuffer[Shark]()
 
-
-
-
   def move(animal: Animal): Unit = {
     val possibleMoves = List((-1, 0), (1, 0), (0, -1), (0, 1))
       .map { case (dx, dy) => (animal.position._1 + dx, animal.position._2 + dy) }
